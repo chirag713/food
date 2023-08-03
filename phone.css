@@ -61,7 +61,7 @@
 }
 
 
-@media screen and (max-width:514px) {
+@media screen and (max-width:721px) {
     .client-section {
         height: 310px;
     }
@@ -76,7 +76,7 @@
 
 }
 
-@media screen and (max-width:256px) {
+@media screen and (max-width:360px) {
     .client-section {
         height: 470px;
     }
