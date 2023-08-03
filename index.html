@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Bree+Serif&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="phone.css">
 </head>
 
 <body>
@@ -42,7 +43,9 @@
         <div class="services">
             <div class="box">
                 <img src="https://tse3.mm.bing.net/th?id=OIP.VXaWx5npfzjt9yD9_UQLzQHaE8&pid=Api&P=0&h=180" alt="">
+                <h3 style="color: red;">price--> &#8377;100</h3>
                 <h2 class="h-secondary center"><button id="button" onclick="chirag1()">Order now</button></h2>
+
                 <p>
                 <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus exercitationem obcaecati,
                     repellendus
@@ -62,7 +65,9 @@
             </div>
             <div class="box">
                 <img src="https://i.pinimg.com/originals/56/6f/7e/566f7eed88399c6feb549f7796ff18f2.jpg" alt="">
+                <h3 style="color: red;">price--> &#8377;60</h3>
                 <h2 class="h-secondary center"><button onclick="chirag2()" id="button">Order now</button></h2>
+
                 <p>
                 <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus exercitationem obcaecati,
                     repellendus
@@ -82,7 +87,9 @@
             <div class="box">
 
                 <img src="http://www.readersdigest.ca/wp-content/uploads/2015/11/gourmet-burger.jpg" alt="">
+                <h3 style="color: red;">price--> &#8377;50</h3>
                 <h2 class="h-secondary center"><button onclick="chirag3()" id="button">Order now</button></h2>
+
                 <p>
                 <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus exercitationem obcaecati,
                     repellendus
@@ -110,22 +117,22 @@
         <h1 class="h-primary center">Our Clients</h1>
         <div class="clients">
             <div class="client-item">
-                <img src="logo1.png" alt="Our client">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.ppHfoiY1wReR944hXWm7wwHaHa&pid=Api&P=0&h=180" alt="Our client">
             </div>
             <div class="client-item">
-                <img src="logo1.png" alt="Our client">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.zq-DhDIq95BIbP8XagovJAHaFj&pid=Api&P=0&h=180" alt="Our client">
             </div>
             <div class="client-item">
-                <img src="logo1.png" alt="Our client">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.M45DMMHUpEwPeAsh9isdyAHaHa&pid=Api&P=0&h=180" alt="Our client">
             </div>
             <div class="client-item">
-                <img src="logo1.png" alt="Our client">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.Ua5AXhtGRgPuisZVmetclQHaFL&pid=Api&rs=1&c=1&qlt=95&w=160&h=111" alt="Our client">
             </div>
             <div class="client-item">
-                <img src="logo1.png" alt="Our client">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.JtmXSh_uyZBaTg1eXd-NtgHaHa&pid=Api&P=0&h=180" alt="Our client">
             </div>
             <div class="client-item">
-                <img src="logo1.png" alt="Our client">
+                <img src="https://s.yimg.com/fz/api/res/1.2/2fCFItX4X5H4Ir8aqZcztA--~C/YXBwaWQ9c3JjaGRkO2g9MTQ0O3E9ODA7dz0xNDQ-/https://s.yimg.com/zb/imgv1/b5177193-d21e-3f47-9827-3cad4095f8c4/t_500x300" alt="Our client">
             </div>
         </div>
 
@@ -137,13 +144,14 @@
 
                 <div class="formgroup">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="enter your name">
+                    <input type="text" name="name" id="name" placeholder="enter your name" onkeyup="bag(this)">
+                    <div id="car"></div>
 
                 </div>
                 <div class="formgroup">
                     <label for="number">Ph-number</label>
                     <input type="number" name="number" id="number" placeholder="enter your Phone number">
-                   
+
                 </div>
                 <div class="formgroup">
 
@@ -159,6 +167,14 @@
             </form>
         </div>
     </section>
+    <div class="center red">
+        Thanks for visiting our website
+        <br>
+        hope you liked it
+        <br>
+        please visit again
+
+    </div>
     <footer>
         <div class="center">
             Copyright &copy; www.myonlinemeal.com All rights reserved

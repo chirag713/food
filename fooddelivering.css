@@ -65,7 +65,7 @@
     background-color: white;
 }
 
-.item {}
+
 
 #home {
     display: flex;
@@ -82,10 +82,12 @@
     content: "";
     background-color: black;
     position: absolute;
-    height: 100%;
+    height: 470px;
     width: 100%;
     z-index: -1;
     opacity: 0.4;
+    top: 0;
+    left: 0;
     /* top: 0px;
     left: 0px; */
 }
@@ -136,6 +138,7 @@
     display: flex;
 }
 
+
 .services .box {
     border: 2px solid brown;
     padding: 34px;
@@ -155,6 +158,9 @@
 #range3 {
     opacity: 0;
 }
+#res1,#res2,#res3{
+    color: rgb(254, 89, 0);
+}
 
 #bills {
     border: 2px solid black;
@@ -164,45 +170,55 @@
     text-align: center;
     opacity: 0;
 }
-.client-section{
-height: 400px;
+
+.client-section {
+    height: 400px;
+    position: relative;
 }
-.client-section::before{
+
+.client-section::before {
     content: "";
     position: absolute;
-    background:url("backgrond.jpeg");
+    background: url("backgrond.jpeg");
     width: 100%;
-    height: 50%;
+    height: 400px;
     z-index: -1;
     opacity: 0.3;
 
-    }
-.clients{
+}
+
+.clients {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.client-item{
-    padding: 34px;
+
+.client-item {
+    padding: 20px;
 }
-.clients img{
+
+.clients img {
     height: 150px;
+    width: 100px;
 }
-#contact{
+
+#contact {
     position: relative;
-     
+
 }
-#contact::before{
+
+#contact::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background: url("https://static1.bigstockphoto.com/5/4/2/large1500/245078380.jpg") no-repeat center center/cover;
+    background: url("https://static1.bigstockphoto.com/5/4/2/large1500/245078380.jpg") no-repeat center;
 }
-.contactbox{
+
+.contactbox {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -210,25 +226,39 @@ height: 400px;
     padding-bottom: 34px;
     border-radius: 9px;
 }
-.contactbox form{
+
+.contactbox form {
     width: 40%;
 }
-.contactbox label{
+
+.contactbox label {
     font-size: 1.3rem;
     font-family: sans-serif;
 }
 
-.contactbox input{
-width: 100%;
-}
-.contactbox textarea{
+.contactbox input {
     width: 100%;
     padding: 0.5rem;
     border-radius: 9px;
     font-size: 1.1rem;
 }
-footer{
+
+.contactbox textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+footer {
     background: black;
     color: white;
     padding: 9px 20px;
+}
+.red{
+    background-color: rgb(82, 41, 41);
+    color: black;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }

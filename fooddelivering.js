@@ -7,7 +7,7 @@ let myprogressbar3 = document.getElementById("myprogressbar3");
 let a = document.getElementById("input1");
 let b = document.getElementById("input2");
 let c = document.getElementById("input3");
-var bill1,bill2,bill3;
+var bill1, bill2, bill3;
 function chirag1() {
     range1.style.opacity = 1;
 }
@@ -98,9 +98,24 @@ myprogressbar2.addEventListener("change", () => {
 myprogressbar3.addEventListener("change", () => {
     c.value = Math.floor(myprogressbar3.value / 20);
 })
-function bill(){
-    var total=Math.floor(myprogressbar3.value / 20)*50+Math.floor(myprogressbar2.value / 20)*60+Math.floor(myprogressbar1.value / 20)*100;
-    var bills=document.getElementById("bills");
-    bills.style.opacity=1;
-    bills.innerHTML="pizza:"+ Math.floor(myprogressbar1.value / 20)+"-->100x"+ Math.floor(myprogressbar1.value / 20)+"="+ Math.floor(myprogressbar1.value / 20)*100+"</br>"+"chaumin:"+ Math.floor(myprogressbar2.value / 20)+"-->60x"+ Math.floor(myprogressbar2.value / 20)+"="+ Math.floor(myprogressbar2.value / 20)*60+"</br>"+"Burger:"+ Math.floor(myprogressbar3.value / 20)+"-->50x"+ Math.floor(myprogressbar3.value / 20)+"="+ Math.floor(myprogressbar3.value / 20)*50+"<br>"+"Total="+total
+function bill() {
+    var total = Math.floor(myprogressbar3.value / 20) * 50 + Math.floor(myprogressbar2.value / 20) * 60 + Math.floor(myprogressbar1.value / 20) * 100;
+    var bills = document.getElementById("bills");
+    bills.style.opacity = 1;
+    bills.innerHTML = "pizza:" + Math.floor(myprogressbar1.value / 20) + "-->100x" + Math.floor(myprogressbar1.value / 20) + "=" + Math.floor(myprogressbar1.value / 20) * 100 + "</br>" + "chaumin:" + Math.floor(myprogressbar2.value / 20) + "-->60x" + Math.floor(myprogressbar2.value / 20) + "=" + Math.floor(myprogressbar2.value / 20) * 60 + "</br>" + "Burger:" + Math.floor(myprogressbar3.value / 20) + "-->50x" + Math.floor(myprogressbar3.value / 20) + "=" + Math.floor(myprogressbar3.value / 20) * 50 + "<br>" + "Total=" + total
+}
+function bag(elem){
+    let car=document.getElementById("car");
+    if(isNaN(elem.value))
+    {
+        car.innerHTML="";
+    }
+    else if(elem.value=="")
+    {
+        car.innerHTML="";
+
+    }
+    else{
+        car.innerHTML="Numbers are not allowed";
+    }
 }
